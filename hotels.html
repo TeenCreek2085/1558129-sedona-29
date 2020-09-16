@@ -1,109 +1,123 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Седона</title>
-</head>
-<body>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-body">
 
-  <header>
-    <nav>
-      <a href="index.html">
-        <img src="img/index-logo.svg" width="138" height="70" alt="Логотип сайта">
-      </a>
-      <ul>
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="photo-video.html">Фото и видео</a></li>
-        <li><a href="map.html">Карта штата</a></li>
-        <li>Гостиницы</li>
-      </ul>
-    </nav>
-  </header>
+    <header class="main-header">
+      <div class="main-header-logo">
+        <a>
+          <img src="img/index-logo.svg" width="138" height="70" alt="Логотип сайта">
+        </a>
+      </div>
+      <nav class="main-nav"></nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="info.html">Информация</a></li>
+          <li class="nav-item"><a href="photo-video.html">Фото и видео</a></li>
+          <li class="nav-item"><a href="map.html">Карта штата</a></li>
+          <li class="nav-item">Гостиницы</li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <h1>Выбор жилья</h1>
+    <main class="container">
+      <h1 class="hotels-choice">Выбор жилья</h1>
 
-    <section>
-      <h2>Фильтр жилья</h2>
-      <!-- Здесь будет форма фильтра -->
-    </section>
+      <section class="hotels-form">
+        <h2 class="hotels-filter">Фильтр жилья</h2>
+        <!-- Здесь будет форма фильтра -->
+      </section>
 
-    <section>
-      <h2>Найдено: 3</h2>
-      <span>Сортировка:</span>
-        <a href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По рейтингу</a>
-    </section>
+      <section class="hotels-sort">
+        <div class="hotels-found">Найдено: 3</div>
+        <ul class="hotels-list">
+          <li class="hotels-item">Сортировка:</li>
+            <a class="sort-by-price" href="#">По цене</a>
+            <a class="sort-by-type" href="#">По типу</a>
+            <a class="sort-by-rating" href="#">По рейтингу</a>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Список жилья</h2>
-      <ul>
-        <li>
-          <h3>Amara resort & spa</h3>
-          <img src="img/amara-resort.svg" width="135" height="90" alt="Гостиница Amara resort & spa">
-          <span>Гостиница</span>
-          <span>От 4000 Р.</span>
-          <span>Рейтинг: 8,5</span>
-          <button type="button">Подробнее</button>
-          <button type="button">Забронировать</button>
-        </li>
-        <li>
-          <h3>Desert quail inn</h3>
-          <img src="img/desert-quail.svg" width="135" height="90" alt="Мотель Desert quail inn">
-          <span>Мотель</span>
-          <span>От 3000 Р.</span>
-          <span>Рейтинг: 8,9</span>
-          <button type="button">Подробнее</button>
-          <button type="button">Забронировать</button>
-        </li>
-        <li>
-          <h3>Villas at poco diablo</h3>
-          <img src="img/villas-at-poco.svg" width="135" height="90" alt="Апартаменты Villas at poco diablo">
-          <span>Апартаменты</span>
-          <span>От 2000 Р.</span>
-          <span>Рейтинг: 9,2</span>
-          <button type="button">Подробнее</button>
-          <button type="button">Забронировать</button>
-        </li>
-      </ul>
-    </section>
+      <section class="hotels">
+        <div class="hotels-number">
+          <h2 class="hotels-name">Amara resort & spa</h2>
+          <img class="hotels-image" src="img/amara-resort.svg" width="135" height="90" alt="Гостиница Amara resort & spa">
+          <span class="hotels-name">Гостиница</span>
+          <span class="hotels-price">От 4000 Р.</span>
+          <span class="hotels-rating">Рейтинг: 8,5</span>
+          <button class="button button-blue" type="button">Подробнее</button>
+          <button class="button button-brown" type="button">Забронировать</button>
+        </div>
+        <div class="hotels-number">
+          <h2 class="hotels-name">Desert quail inn</h2>
+          <img class="hotels-image" src="img/desert-quail.svg" width="135" height="90" alt="Мотель Desert quail inn">
+          <span class="hotels-name">Мотель</span>
+          <span class="hotels-price"></span>>От 3000 Р.</span>
+          <span class="hotels-rating">Рейтинг: 8,9</span>
+          <button class="button button-blue" type="button">Подробнее</button>
+          <button class="button button-brown" type="button">Забронировать</button>
+        </div>
+        <div class="hotels-number">
+          <h2 class="hotels-name">Villas at poco diablo</h2>
+          <img class="hotels-image" src="img/villas-at-poco.svg" width="135" height="90" alt="Апартаменты Villas at poco diablo">
+          <span class="hotels-name">Апартаменты</span>
+          <span class="hotels-price"></span>>От 2000 Р.</span>
+          <span class="hotels-rating">Рейтинг: 9,2</span>
+          <button class="button button-blue" type="button">Подробнее</button>
+          <button class="button button-brown" type="button">Забронировать</button>
+        </div>
+      </section>
 
-  </main>
+    </main>
 
-  <footer>
 
-    <section>
-      <h2>Контактная информация</h2>
-      <p>
-        #visitsedona<br>
-        tel: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
-      </p>
-    </section>
 
-    <section>
-      <h2>Социальные сети</h2>
-      <ul>
-        <li>
-          <a href="#">Twitter</a>
-        </li>
-        <li>
-          <a href="#">Facebook</a>
-        </li>
-        <li>
-          <a href="#">Youtube</a>
-        </li>
-      </ul>
-    </section>
 
-    <section>
-      <h2>Website by</h2>
-      <a>
-        <img src="img/footer-logo.svg" width="115" height="41" alt="Логотип компании разработчика сайта">
-      </a>
-    </section>
 
-  </footer>
 
-</body>
+
+
+
+
+
+    
+    <footer class="main-footer">
+
+      <section class="contacts">
+        <h2 class="contacts-title">Контактная информация</h2>
+        <p class="contacts-text">
+          #visitsedona<br>
+          tel: <a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
+        </p>
+      </section>
+
+      <section class="footer-social">
+        <h2 class="social-title">Социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button" href="#">Twitter</a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">Facebook</a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">Youtube</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="developer">
+        <h2 class="developer-title">Website by</h2>
+        <a class="footer-logo">
+          <img src="img/footer-logo.svg" width="115" height="41" alt="Логотип компании разработчика сайта">
+        </a>
+      </section>
+
+    </footer>
+
+  </body>
 </html>

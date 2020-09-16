@@ -1,113 +1,131 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
 
-    <header>
-      <nav>
+    <header class="main-header">
+      <div class="main-header-logo">
         <a>
           <img src="img/index-logo.svg" width="138" height="70" alt="Логотип сайта">
         </a>
-        <ul>
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo-video.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+      </div>
+      <nav class="main-nav"></nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="info.html">Информация</a></li>
+          <li class="nav-item"><a href="photo-video.html">Фото и видео</a></li>
+          <li class="nav-item"><a href="map.html">Карта штата</a></li>
+          <li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="container">
 
-      <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <!-- Здесь будет картинка ландшафта Седоны
+      <div class="promo">
+        <img src="" width="" height="" alt="Welcome to the gorgeous Sedona">
+      </div>
+      -->
 
-      <section>
-        <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</h2>
-        <ul>
-          <li>
-            <h3>Настоящий городок</h3>
-            <p>Седона- не аттракцион для туристов, там течёт своя жизнь</p>
+      <h1 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+
+      <section class="description-reasons">
+        <p class="description-reasons-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        <ul class="reasons-list">
+          <li class="reasons-item reasons-blue">
+            <h2 class="reasons-title">Настоящий городок</h2>
+            <div class="reasons-number">№1</div>
+            <p class="reasons-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
-          <li>
-            <h3>Там есть мост Дьявола</h3>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <li class="reasons-item reasons-blue">
+            <h2 class="reasons-title ">Там есть мост Дьявола</h2>
+            <div class="reasons-number">№2</div>
+            <p class="reasons-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
-          <li>
-            <h3>Небольшая площадь</h3>
-            <p>Все достопримечательности находятся очень близко</p>
+          <li class="reasons-item">
+            <h2 class="reasons-title">Небольшая площадь</h2>
+            <div class="reasons-number">№3</div>
+            <p class="reasons-text">Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
-            <h3>Красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="reasons-item">
+            <h2 class="reasons-title">Красивая дорога</h2>
+            <div class="reasons-number">№4</div>
+            <p class="reasons-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
-            <h3>Мало туристов</h3>
-            <p>Большинство едет в Гранд каньон и толпится там</p>
+          <li class="reasons-item">
+            <h2 class="reasons-title">Мало туристов</h2>
+            <div class="reasons-number">№5</div>
+            <p class="reasons-text">Большинство едет в Гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Наши рекомендации</h2>
-        <ul>
-          <li>
-            <h3>Жильё</h3>
-            <p>Реомендуем пожить в настоящем мотеле. Всё как в кино!</p>
+      <section class="recommendation">
+        <ul class="recommendation-list">
+          <li class="recommendation-item">
+            <h2 class="recommendation-title">Жильё</h2>
+            <p class="recommendation-text">Рекомендуем пожить в настоящем мотеле. Всё как в кино!</p>
           </li>
-          <li>
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="recommendation-item">
+            <h2 class="recommendation-title">Еда</h2>
+            <p class="recommendation-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li>
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+          <li class="recommendation-item">
+            <h2 class="recommendation-title">Сувениры</h2>
+            <p class="recommendation-text">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <section class="hotel-search">
+        <h2 class="hotel-search-title">Заинтересовались?</h2>
+        <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </section>
 
-      <section>
-        <h2>Как до нас добраться</h2>
-        <img src="img/map.svg" width="1199" height="594" alt="Дорога до Седоны">
+      <!-- Здесь будет форма поиска гостиницы
+      <section class="search-form">
+      -->
+
+      <section class="map">
+        <h2 class="map-title">Как до нас добраться</h2>
+        <img class="map-image" src="img/map.svg" width="1199" height="594" alt="Дорога до Седоны">
       </section>
 
     </main>
 
-    <footer>
+    <footer class="main-footer">
 
-      <section>
-        <h2>Контактная информация</h2>
-        <p>
+      <section class="contacts">
+        <h2 class="contacts-title">Контактная информация</h2>
+        <p class="contacts-text">
           #visitsedona<br>
-          tel: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+          tel: <a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
         </p>
       </section>
 
-      <section>
-        <h2>Социальные сети</h2>
-        <ul>
-          <li>
-            <a href="#">Twitter</a>
+      <section class="footer-social">
+        <h2 class="social-title">Социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button" href="#">Twitter</a>
           </li>
-          <li>
-            <a href="#">Facebook</a>
+          <li class="social-item">
+            <a class="social-button" href="#">Facebook</a>
           </li>
-          <li>
-            <a href="#">Youtube</a>
+          <li class="social-item">
+            <a class="social-button" href="#">Youtube</a>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Website by</h2>
-        <a>
+      <section class="developer">
+        <h2 class="developer-title">Website by</h2>
+        <a class="footer-logo">
           <img src="img/footer-logo.svg" width="115" height="41" alt="Логотип компании разработчика сайта">
         </a>
       </section>
