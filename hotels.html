@@ -11,15 +11,15 @@
     <header class="main-header">
       <div class="main-header-logo">
         <a>
-          <img src="img/index-logo.svg" width="138" height="70" alt="Логотип сайта">
+          <img src="img/header-logo.svg" width="138" height="70" alt="Логотип сайта">
         </a>
       </div>
-      <nav class="main-nav"></nav>
+      <nav class="main-nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="info.html">Информация</a></li>
           <li class="nav-item"><a href="photo-video.html">Фото и видео</a></li>
           <li class="nav-item"><a href="map.html">Карта штата</a></li>
-          <li class="nav-item disabled">Гостиницы</li>
+          <li class="nav-item nav-item-active">Гостиницы</li>
         </ul>
       </nav>
     </header>
@@ -36,16 +36,22 @@
         <div class="hotels-found">Найдено: 3</div>
         <ul class="hotels-list">
           <li class="hotels-item">Сортировка:</li>
-            <a class="sort-by-price" href="#">По цене</a>
+          <li>
+            <a class="sort-by-price sort-by-price-active" href="#">По цене</a>
+          </li>
+          <li>
             <a class="sort-by-type" href="#">По типу</a>
+          </li>
+          <li>
             <a class="sort-by-rating" href="#">По рейтингу</a>
+          </li>
         </ul>
       </section>
 
       <section class="hotels">
         <div class="hotels-number">
           <h2 class="hotels-name">Amara resort & spa</h2>
-          <img class="hotels-image" src="img/amara-resort.svg" width="135" height="90" alt="Гостиница Amara resort & spa">
+          <img class="hotels-image" src="img/hotel-amara-resort.jpg" width="135" height="90" alt="Гостиница Amara resort & spa">
           <span class="hotels-name">Гостиница</span>
           <span class="hotels-price">От 4000 Р.</span>
           <span class="hotels-rating">Рейтинг: 8,5</span>
@@ -54,7 +60,7 @@
         </div>
         <div class="hotels-number">
           <h2 class="hotels-name">Desert quail inn</h2>
-          <img class="hotels-image" src="img/desert-quail.svg" width="135" height="90" alt="Мотель Desert quail inn">
+          <img class="hotels-image" src="img/hotel-desert-quail.jpg" width="135" height="90" alt="Мотель Desert quail inn">
           <span class="hotels-name">Мотель</span>
           <span class="hotels-price">От 3000 Р.</span>
           <span class="hotels-rating">Рейтинг: 8,9</span>
@@ -63,7 +69,7 @@
         </div>
         <div class="hotels-number">
           <h2 class="hotels-name">Villas at poco diablo</h2>
-          <img class="hotels-image" src="img/villas-at-poco.svg" width="135" height="90" alt="Апартаменты Villas at poco diablo">
+          <img class="hotels-image" src="img/hotel-villas-at-poco.png" width="135" height="90" alt="Апартаменты Villas at poco diablo">
           <span class="hotels-name">Апартаменты</span>
           <span class="hotels-price">От 2000 Р.</span>
           <span class="hotels-rating">Рейтинг: 9,2</span>
@@ -73,17 +79,6 @@
       </section>
 
     </main>
-
-
-
-
-
-
-
-
-
-
-
     
     <footer class="main-footer">
 

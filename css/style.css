@@ -42,7 +42,7 @@
 body {
   min-width: 1280px;
   margin: 0;
-  padding: 0;
+  padding: 0 40px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -60,7 +60,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--brown);
+  color: var(--blue);
 }
 
 /* Header */
@@ -94,17 +94,17 @@ a:focus {
   background-color: var(--gray);
 }
 
-.reasons-item:nth-child(-n+2) {
-  color: var(--white);
-  background-color: var(--blue);
-}
-
 .reasons-number {
   font-weight: 400;
 }
 
 .reasons-text {
   font-weight: 400;
+}
+
+.reasons-blue {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .recommendation-title {

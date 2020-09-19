@@ -37,13 +37,16 @@
   --gray-darken: #a9a9a9;
   --darken-gray: #666666;
   --black-white-brown: #888888;
+
+  --special-blue: #3C87B5;
+  --special-brown: #52453D;
 }
 
 /* Global */
 body {
   min-width: 1280px;
   margin: 0;
-  padding: 0;
+  padding: 0 40px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -61,7 +64,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--brown);
+  color: var(--blue);
 }
 
 /* Header */
@@ -76,7 +79,7 @@ a:focus {
 }
 
 .nav-item-active {
-  color: var(--brown);
+  color: var(--blue);
 }
 
 /* Main */
@@ -120,15 +123,25 @@ a:focus {
 
 .button:hover,
 .button:focus {
-  color: var(--brown);
+  background-color: var(--blue);
 }
 
 .button-blue {
   background-color: var(--blue);
 }
 
+.button-blue:hover,
+.button-blue:focus {
+  background-color: var(--special-blue);
+}
+
 .button-brown {
   background-color: var(--brown);
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: var(--special-brown);
 }
 
 /* Footer */
