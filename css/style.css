@@ -39,10 +39,14 @@
 }
 
 /* Global */
-body {
+.page {
+  height: 100%;
+}
+
+.page-body {
   min-width: 1280px;
   margin: 0;
-  padding: 0 40px;
+  padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -50,7 +54,7 @@ body {
   color: var(--black);
   text-transform: uppercase;
   text-align: center;
-  background-color: var(--white);
+  background-color: var(--white-lighten);
 }
 
 a {
@@ -63,11 +67,36 @@ a:focus {
   color: var(--blue);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /* Header */
+.main-nav {
+  display: grid;
+  position: relative;
+  grid-template-rows: 1fr;
+}
+
+.main-header-logo {
+  position: absolute;
+  justify-self: center;
+}
+
 .nav-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   list-style: none;
-  text-decoration: none;
-  line-height: 26px;
+  margin: 20px 0;
 }
 
 /* Main */
@@ -82,8 +111,25 @@ a:focus {
   color: var(--black-lighten);
 }
 
-.reasons-list {
-  list-style: none;
+.row-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.row-3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+}
+
+.row-4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .reasons-title {
@@ -92,6 +138,8 @@ a:focus {
 
 .reasons-item {
   background-color: var(--gray);
+  align-self: center;
+  padding: 52px;
 }
 
 .reasons-number {
@@ -107,17 +155,13 @@ a:focus {
   color: var(--white);
 }
 
-.recommendation-title {
-  font-size: 21px;  
+.reasons-white {
+  background-color: var(--white);
+  color: var(--black);
 }
 
-.recommendation-list {
-  list-style: none;
-}
-
-.recommendation-text {
-  font-weight: 400;
-  color: var(--black-lighten);
+.recommendation {
+  background-color: var(--white);
 }
 
 .hotel-search-title {
@@ -132,12 +176,19 @@ a:focus {
 }
 
 /* Footer */
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .contacts-text {
   font-size: 21px;
   line-height: 26px;
 }
 
 .social-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
