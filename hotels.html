@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/hotels.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
 
@@ -26,7 +26,8 @@
         </nav>
       </header>
 
-      <main class="container">
+      <main class="main-container">
+      
         <h1 class="hotels-choice">Выбор жилья</h1>
 
         <section class="hotels-form">
@@ -51,72 +52,89 @@
         </section>
 
         <section class="hotels">
-          <div class="hotels-number">
-            <h2 class="hotels-name">Amara resort & spa</h2>
-            <img class="hotels-image" src="img/hotel-amara-resort.jpg" width="135" height="90" alt="Гостиница Amara resort & spa">
-            <span class="hotels-name">Гостиница</span>
-            <span class="hotels-price">От 4000 Р.</span>
-            <span class="hotels-rating">Рейтинг: 8,5</span>
-            <button class="button button-blue" type="button">Подробнее</button>
-            <button class="button button-brown" type="button">Забронировать</button>
+
+          <div class="hotels-box-1">  
+            <div>
+              <img class="hotels-image" src="img/hotel-amara-resort.jpg" width="135" height="90" alt="Гостиница Amara resort & spa">
+            </div>
+            <div class="hotels-number">
+              <h2 class="hotels-name">Amara resort & spa</h2>
+              <span class="hotels-name">Гостиница</span>
+              <span class="hotels-price">От 4000 Р.</span>
+              <span class="hotels-rating">Рейтинг: 8,5</span>
+              <button class="button button-blue" type="button">Подробнее</button>
+              <button class="button button-brown" type="button">Забронировать</button>
+            </div>
           </div>
-          <div class="hotels-number">
-            <h2 class="hotels-name">Desert quail inn</h2>
-            <img class="hotels-image" src="img/hotel-desert-quail.jpg" width="135" height="90" alt="Мотель Desert quail inn">
-            <span class="hotels-name">Мотель</span>
-            <span class="hotels-price">От 3000 Р.</span>
-            <span class="hotels-rating">Рейтинг: 8,9</span>
-            <button class="button button-blue" type="button">Подробнее</button>
-            <button class="button button-brown" type="button">Забронировать</button>
+
+          <div class="hotels-box-2">  
+            <div>
+              <img class="hotels-image" src="img/hotel-desert-quail.jpg" width="135" height="90" alt="Мотель Desert quail inn">
+            </div>
+            <div class="hotels-number">
+              <h2 class="hotels-name">Desert quail inn</h2>
+              <span class="hotels-name">Мотель</span>
+              <span class="hotels-price">От 3000 Р.</span>
+              <span class="hotels-rating">Рейтинг: 8,9</span>
+              <button class="button button-blue" type="button">Подробнее</button>
+              <button class="button button-brown" type="button">Забронировать</button>
+            </div>
           </div>
-          <div class="hotels-number">
-            <h2 class="hotels-name">Villas at poco diablo</h2>
-            <img class="hotels-image" src="img/hotel-villas-at-poco.png" width="135" height="90" alt="Апартаменты Villas at poco diablo">
-            <span class="hotels-name">Апартаменты</span>
-            <span class="hotels-price">От 2000 Р.</span>
-            <span class="hotels-rating">Рейтинг: 9,2</span>
-            <button class="button button-blue" type="button">Подробнее</button>
-            <button class="button button-brown" type="button">Забронировать</button>
+
+          <div class="hotels-box-3">  
+            <div>
+              <img class="hotels-image" src="img/hotel-villas-at-poco.png" width="135" height="90" alt="Апартаменты Villas at poco diablo">
+            </div>
+            <div class="hotels-number">
+              <h2 class="hotels-name">Villas at poco diablo</h2>
+              <span class="hotels-name">Апартаменты</span>
+              <span class="hotels-price">От 2000 Р.</span>
+              <span class="hotels-rating">Рейтинг: 9,2</span>
+              <button class="button button-blue" type="button">Подробнее</button>
+              <button class="button button-brown" type="button">Забронировать</button>
+            </div>
           </div>
+
         </section>
 
       </main>
-      
-      <footer class="main-footer">
 
-        <section class="contacts">
-          <h2 class="contacts-title">Контактная информация</h2>
-          <p class="contacts-text">
-            #visitsedona<br>
-            tel: <a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
-          </p>
-        </section>
+    <footer class="main-footer">
 
-        <section class="footer-social">
-          <h2 class="social-title">Социальные сети</h2>
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-button" href="#">Twitter</a>
-            </li>
-            <li class="social-item">
-              <a class="social-button" href="#">Facebook</a>
-            </li>
-            <li class="social-item">
-              <a class="social-button" href="#">Youtube</a>
-            </li>
-          </ul>
-        </section>
+      <section class="contacts">
+        <h2 class="contacts-title">Контактная информация</h2>
+        <p class="contacts-text">
+          #visitsedona<br>
+          tel: <a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
+        </p>
+      </section>
 
-        <section class="developer">
-          <h2 class="developer-title">Website by</h2>
-          <a class="footer-logo">
-            <img src="img/footer-logo.svg" width="115" height="41" alt="Логотип компании разработчика сайта">
-          </a>
-        </section>
+      <section class="footer-social">
+        <h2 class="social-title">Социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button" href="#">Twitter</a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">Facebook</a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">Youtube</a>
+          </li>
+        </ul>
+      </section>
 
-      </footer>
+      <section class="developer">
+        <h2 class="developer-title">Website by</h2>
+        <a class="footer-logo">
+          <img src="img/footer-logo.svg" width="115" height="41" alt="Логотип компании разработчика сайта">
+        </a>
+      </section>
 
-    </div>
+    </footer>
 
-  </body>
+  </div>
+  
+</body>
 </html>
+
