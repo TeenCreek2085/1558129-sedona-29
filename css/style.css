@@ -87,21 +87,43 @@ a:focus {
 
 .main-nav {
   display: grid;
-  position: relative;
   grid-template-rows: 1fr;
-}
-
-.main-header-logo {
-  position: absolute;
-  justify-self: center;
 }
 
 .nav-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 15px 0;
-  line-height: 26px;
+  position: relative;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 56px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-header-logo {
+  position: absolute;
+  transform: translate(-70px, -28px);
+}
+
+.nav-item:nth-child(1){
+  order: 3;
+}
+
+.nav-item:nth-child(2){
+  order: 1;
+}
+
+.nav-item:nth-child(3){
+  order: 2;
+}
+
+.nav-item:nth-child(4){
+  order: 4;
+}
+
+.nav-item:nth-child(5){
+  order: 5;
 }
 
 /* Main */

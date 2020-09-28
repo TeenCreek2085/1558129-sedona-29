@@ -90,21 +90,43 @@ a:focus {
 
 .main-nav {
   display: grid;
-  position: relative;
   grid-template-rows: 1fr;
-}
-
-.main-header-logo {
-  position: absolute;
-  justify-self: center;
 }
 
 .nav-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 15px 0;
-  line-height: 26px;
+  position: relative;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 56px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-header-logo {
+  position: absolute;
+  transform: translate(-70px, -28px);
+}
+
+.nav-item:nth-child(1){
+  order: 3;
+}
+
+.nav-item:nth-child(2){
+  order: 1;
+}
+
+.nav-item:nth-child(3){
+  order: 2;
+}
+
+.nav-item:nth-child(4){
+  order: 4;
+}
+
+.nav-item:nth-child(5){
+  order: 5;
 }
 
 .nav-item-active {
@@ -153,7 +175,6 @@ a:focus {
   color: var(--blue);
 }
 
-/*----------*/
 .hotels-list {
   display: flex;
   flex-direction: column;
@@ -165,10 +186,12 @@ a:focus {
 .hotels-item {
   display: flex;
   flex-direction: row; 
+  justify-content: space-between;
   margin-bottom: 55px;
 }
 
 .description {
+  flex: 1 0 auto;
   text-align: start;
 }
 
@@ -187,8 +210,6 @@ a:focus {
   margin-bottom: 19px;
 }
 
-/*------------*/
-
 .hotels-type {
   margin-right: 35px;
 }
@@ -202,6 +223,7 @@ a:focus {
 .hotels-rating {
   font-weight: 400;
   margin: 0;
+  margin-right: 85px;
   padding: 0;
   color: var(--darken-gray);
   background-color: var(--white-lighten);
