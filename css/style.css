@@ -229,9 +229,20 @@ a:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   width: 1200px;
   margin: 0 auto;
   background-color: var(--white-opacity);
+}
+
+.contacts-title {
+  margin: 0;
+  padding: 0; 
+}
+
+.social-title {
+  margin: 0;
+  padding: 0;
 }
 
 .social-list {
@@ -241,8 +252,4 @@ a:focus {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.developer-title {
-  line-height: 26px;
 }
