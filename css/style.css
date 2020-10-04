@@ -70,6 +70,24 @@ a:focus {
   color: var(--blue);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Grid */
 .page-body {
   min-height: 100%;
@@ -94,7 +112,7 @@ a:focus {
   display: grid;
   position: relative;
   grid-template-columns: repeat(5, 20%);
-  grid-template-rows: 56px;
+  grid-template-rows: 55px;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -103,7 +121,8 @@ a:focus {
 
 .main-header-logo {
   position: absolute;
-  transform: translate(-70px, -28px);
+  right: 530px;
+  top: -15px;
 }
 
 .nav-item:nth-child(1){
@@ -126,6 +145,11 @@ a:focus {
   order: 5;
 }
 
+.nav-list a {
+  display: block;
+  padding: 15px 0;
+}
+
 /* Main */
 .main-container {
   width: 1200px;
@@ -138,9 +162,36 @@ a:focus {
 }
 
 .title {
+  position: relative; 
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
   font-size: 21px;
   line-height: 26px;
-  margin-bottom: 16px;
+}
+
+.title::before {
+  position: absolute;
+  content:"";
+  bottom: 185px;
+  left: 370px;
+  width: 457px;
+  height: 351px;
+  background-image: url(../img/welcome.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.title::after {
+  position: absolute;
+  content:"";
+  bottom: 90px;
+  left: 0;
+  width: 1200px;
+  height: 75px;
+  background-image: url(../img/background-1.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .description-reasons-text {
@@ -163,7 +214,6 @@ a:focus {
 .row-3 {
   display: grid;
   grid-template-columns: 2fr 1fr;
-
 }
 
 .row-4 {
@@ -173,20 +223,23 @@ a:focus {
 }
 
 .reasons-title {
+  position: relative;
   font-size: 21px;
+  margin: 50px 0 25px 0;
 }
 
 .reasons-item {
   background-color: var(--gray);
   align-self: center;
-  padding: 53px;
 }
 
 .reasons-number {
+  margin-bottom: 20px;
   font-weight: 400;
 }
 
 .reasons-text {
+  margin-bottom: 50px;
   font-weight: 400;
 }
 
@@ -204,6 +257,45 @@ a:focus {
   background-color: var(--white);
 }
 
+.recommendation-title-1,
+.recommendation-title-2,
+.recommendation-title-3 {
+  margin-top: 160px;
+}
+
+.recommendation-title-1::before {
+  position: absolute;
+  content: "";
+  bottom: 50px;
+  right: 163px;
+  background-image: url(../img/icon-house.svg);
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px; 
+}
+
+.recommendation-title-2::before {
+  position: absolute;
+  content: "";
+  bottom: 50px;
+  right: 163px;
+  background-image: url(../img/icon-burger.svg);
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px; 
+}
+
+.recommendation-title-3::before {
+  position: absolute;
+  content: "";
+  bottom: 50px;
+  right: 163px;
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px; 
+}
+
 .hotel-search {
   margin-bottom: 78px;
 }
@@ -211,33 +303,42 @@ a:focus {
 .hotel-search-title {
   font-size: 30px;
   line-height: 24px;
+  margin:0;
+  padding: 0;
+  margin-bottom: 35px;
 }
 
 .hotel-search-text {
+  margin-bottom: 132px;
   font-weight: 400;
   line-height: 24px;
   color: var(--black-lighten);
 }
 
 /* Footer */
-.contacts-text {
-  font-size: 21px;
-  line-height: 26px;
-}
-
 .main-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 1200px;
+  height: 120px;
   margin: 0 auto;
   background-color: var(--white-opacity);
+}
+
+.contacts {
+  margin-left: 30px;
 }
 
 .contacts-title {
   margin: 0;
   padding: 0; 
+}
+
+.contacts-text {
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .social-title {
@@ -252,4 +353,61 @@ a:focus {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.developer {
+  display: flex;
+}
+
+.developer-title {
+  margin: 0;
+  margin-right: 8px;
+  padding: 0;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 14px;
+  align-self: center;
+}
+
+.footer-logo {
+  margin-right: 50px;
+}
+
+.social-button {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  background-color: var(--blue);
+}
+
+.social-button-tw {
+  background-image: url(../img/twitter-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-button-fb {
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-button-yt {
+  background-image: url(../img/youtube-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+} 
+
+.social-button span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

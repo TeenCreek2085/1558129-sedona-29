@@ -28,11 +28,72 @@
 
     <main class="main-container">
     
-      <h1 class="hotels-choice">Выбор жилья</h1>
+      <h1 class="hotels-choice visually-hidden">Выбор жилья</h1>
 
       <section class="hotels-form">
-        <h2 class="hotels-filter">Фильтр жилья</h2>
-        <!-- Здесь будет форма фильтра -->
+        <h2 class="hotels-filter visually-hidden">Фильтр жилья</h2>
+        <form class="form">
+          <div class="form-1">
+            <h2 class="form-title">Инфраструктура:</h2>
+            <label  class="check">
+              <input class="check-input" type="checkbox" checked>
+              <span class="check-box"></span>
+              Бассейн
+            </label>
+            <label class="check">
+              <input class="check-input" type="checkbox">
+              <span class="check-box"></span>
+              Парковка
+            </label>
+            <label class="check">
+              <input class="check-input" type="checkbox">
+              <span class="check-box"></span>
+              Wi-fi
+            </label>
+            </div>
+          </div>
+
+          <div class="form-2">
+            <h2 class="form-title">Тип жилья:</h2>
+            <label  class="check">
+              <input class="check-input" type="checkbox" checked>
+              <span class="check-box"></span>
+              Гостиница
+            </label>
+            <label class="check">
+              <input class="check-input" type="checkbox" checked>
+              <span class="check-box"></span>
+              Мотель
+            </label>
+            <label class="check">
+              <input class="check-input" type="checkbox" checked>
+              <span class="check-box"></span>
+              Апартаменты
+            </label>
+            </div>
+          </div>
+
+          <div class="form-3">
+            <fieldset class="filter-item">
+              <h2 class="form-title">Стоимость в сутки (Р):</h2>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="toggle toggle-min">
+                  <div class="toggle toggle-max">
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="3000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+      
+        </form>   
       </section>
 
       <section class="hotels-sort">
@@ -49,6 +110,14 @@
             <a class="sort-by-rating" href="#">По рейтингу</a>
           </li>
         </ul>
+        <div class="icon-sort">
+          <a class="icon-up" href="">
+            <img src="img/icon-up.svg" width="11" height="10" alt="">
+          </a>
+          <a class="icon-down" href="">
+            <img src="img/icon-down.svg" width="11" height="10" alt="">
+          </a>
+        </div>
       </section>
 
       <section class="hotels">
@@ -67,7 +136,14 @@
                 <button class="button button-brown" type="button">Забронировать</button>
               </div>
             </div>
-            <p class="hotels-rating">Рейтинг: 8,5</p>
+            <div class="rating">
+              <div class="stars">
+                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="">
+              </div>
+              <p class="hotels-rating">Рейтинг: 8,5</p>
           </li>
 
           <li class="hotels-item">
@@ -83,7 +159,13 @@
                 <button class="button button-brown" type="button">Забронировать</button>
               </div>
             </div>
-            <p class="hotels-rating">Рейтинг: 8,9</p>
+            <div class="rating">
+              <div class="stars">
+                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="">
+              </div>
+              <p class="hotels-rating">Рейтинг: 8,9</p>
           </li>
 
           <li class="hotels-item">
@@ -99,7 +181,13 @@
                 <button class="button button-brown" type="button">Забронировать</button>
               </div>
             </div>
-            <p class="hotels-rating">Рейтинг: 9,2</p>
+            <div class="rating">
+              <div class="stars">
+                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="">
+              </div>
+              <p class="hotels-rating">Рейтинг: 9,2</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -108,7 +196,7 @@
   
     <footer class="main-footer">
       <section class="contacts">
-        <h2 class="contacts-title">Контактная информация</h2>
+        <h2 class="contacts-title visually-hidden">Контактная информация</h2>
         <p class="contacts-text">
           #visitsedona<br>
           tel: <a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
@@ -116,16 +204,22 @@
       </section>
 
       <section class="footer-social">
-        <h2 class="social-title">Социальные сети</h2>
+        <h2 class="social-title visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-button" href="#">Twitter</a>
+            <a class="social-button social-button-tw" href="#">
+              <span>Twitter</span>
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-button" href="#">Facebook</a>
+            <a class="social-button social-button-fb" href="#">
+              <span>Facebook</span>
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-button" href="#">Youtube</a>
+            <a class="social-button social-button-yt" href="#">
+              <span>Youtube</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -139,4 +233,3 @@
     </footer>
   </body>
 </html>
-
