@@ -383,15 +383,14 @@ img {
   width: 100%;
   padding-top: 52px;
   padding-bottom: 55px;
-  background-color: white;
+  background-color: var(--white);
  
 
 }
 
 .form-item {
   margin-bottom: 30px;
-  padding-left: 55px;
-  padding-right: 55px;
+  padding: 0 55px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -407,11 +406,9 @@ img {
 
 .input-label {
   display: block;
-
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-
 }
 
 .number-kids-label {
@@ -619,4 +616,15 @@ img {
 
 .social-button:active path {
   opacity: .3;
+}
+
+.body-container {
+  position: relative;
+}
+
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

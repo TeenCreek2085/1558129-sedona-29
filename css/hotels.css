@@ -45,6 +45,8 @@
   --btn-blue-active: #5496BD;
   --logo-brown: #BDBBBC;
   --icon-gray: #CACACA;
+  --border-gray: #e5e5e5;
+  --rating-brown: #666666;
 }
 
 /* Global */
@@ -203,15 +205,16 @@ a:focus {
 }
 
 .form-1 {
-  margin-left: 74px;
+  margin-left: 71px;
 }
 
 .form-2 {
-  margin-left: 15px;
+  margin-left: 3px;
 }
 
 .form-1,
 .form-2 {
+  padding-top: 15px;
   flex-grow: 1;
 }
 
@@ -219,6 +222,7 @@ a:focus {
   flex-grow: 2;
   align-items: flex-end;
   margin-right: 73px;
+  padding-top: 20px;
 }
 
 .form-title {
@@ -485,19 +489,19 @@ a:focus {
 
 .hotels-item {
   display: flex;
-  flex-direction: row; 
   justify-content: space-between;
-  border-top: 1px solid var(--special-gray);
+  border-top: 1px solid var(--border-gray);
   padding: 30px 0;
 }
 
 .hotels-item:last-child {
-  border-bottom: 1px solid var(--special-gray);
+  border-bottom: 1px solid var(--border-gray);
 }
 
 .description {
   flex-grow: 1;
   text-align: start;
+  margin-top: -2px;
 }
 
 .hotels-name {
@@ -521,7 +525,7 @@ a:focus {
 }
 
 .hotels-info {
-  margin-bottom: 19px;
+  margin-bottom: 13px;
 }
 
 .hotels-type {
@@ -549,16 +553,18 @@ a:focus {
 
 .hotels-rating {
   font-weight: 400;
-  margin: 0;
-  margin-right: 85px;
+  margin: 0 85px 5px 0;
   padding: 3px 12px 3px 15px;
-  color: var(--darken-gray);
+  color: var(--rating-brown);
   background-color: var(--white-lighten);
   align-self: flex-end;
 }
 
 .button {
   padding: 3px 16px 3px 17px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: var(--white);
   border: none;
@@ -573,7 +579,6 @@ a:focus {
 }
 
 .button-blue:active {.
-
   background-color: var(--btn-blue-active);
 }
 
@@ -597,12 +602,12 @@ a:focus {
   align-items: center;
   width: 1200px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 20px 0;
   background-color: var(--white-opacity);
 }
 
 .contacts {
-  margin-left: 30px;
+  margin-left: 36px;
 }
 
 .contacts-title {
