@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/hotels.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
+  <body class="page-body body-container">
 
     <header class="main-header">
       <nav class="main-nav">
@@ -14,9 +14,9 @@
           <img src="img/header-logo.svg" width="138" height="70" alt="Логотип сайта">
         </a>
         <ul class="nav-list">
-          <li class="nav-item"><a href="info.html">Информация</a></li>
-          <li class="nav-item"><a href="photo-video.html">Фото и видео</a></li>
-          <li class="nav-item"><a href="map.html">Карта штата</a></li>
+          <li class="nav-item"><a href="#">Информация</a></li>
+          <li class="nav-item"><a href="#">Фото и видео</a></li>
+          <li class="nav-item"><a href="#">Карта штата</a></li>
           <li class="nav-item nav-item-active">Гостиницы</li>
         </ul> 
       </nav>
@@ -28,10 +28,10 @@
 
       <section class="hotels-form">
         <h2 class="hotels-filter visually-hidden">Фильтр жилья</h2>
-        <form class="form">
+        <form class="form" method="get" action="https://echo.htmlacademy.ru">
           <div class="form-1">
             <h2 class="form-title">Инфраструктура:</h2>
-            <label  class="check">
+            <label class="check">
               <input class="check-input" type="checkbox" checked>
               <span class="check-box"></span>
               Бассейн
@@ -46,7 +46,6 @@
               <span class="check-box"></span>
               Wi-fi
             </label>
-            </div>
           </div>
 
           <div class="form-2">
@@ -66,12 +65,11 @@
               <span class="check-box"></span>
               Апартаменты
             </label>
-            </div>
           </div>
 
           <div class="form-3">
             <div class="filter-range">
-              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <h2 class="filter-range-title">Стоимость в сутки (р):</h2>
                 <div class="price-controls">
                   <label class="min-price">от <input type="text" name="min-price" value="0"></label>
                   <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
@@ -84,7 +82,6 @@
                   <div class="range-toggle range-toggle-max"></div>
                 </div>
                <button class="button-form" type="submit">Показать</button>
-              </div>
             </div>
           </div>
         </form>   
@@ -93,25 +90,25 @@
       <section class="hotels-sort">
         <h2 class="hotels-found">Найдено: 3</h2>
         <ul class="sort-list">
-          <li class="sort">Сортировка:</li>
+          <li class="sort-item">Сортировка:</li>
           <li>
-            <a class="sort-by-price sort-by-price-active" href="#">По цене</a>
+            <a class="sort sort-active" href="#">По цене</a>
           </li>
           <li>
-            <a class="sort-by-type" href="#">По типу</a>
+            <a class="sort" href="#">По типу</a>
           </li>
           <li>
-            <a class="sort-by-rating" href="#">По рейтингу</a>
+            <a class="sort" href="#">По рейтингу</a>
           </li>
         </ul>
         <div class="icon-sort">
           <a class="icon-up" href="">
-            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
             </svg>   
           </a>
           <a class="icon-down active" href="">
-            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
             </svg>
           </a>
@@ -124,7 +121,7 @@
           <li class="hotels-item">
             <img class="hotels-image" src="img/hotel-amara-resort.jpg" width="135" height="90" alt="Вид на гостиницу Amara Resort & Spa">
             <div class="description">
-              <h2 class="hotels-name">Amara Resort & Spa</h2>
+              <h2 class="hotels-name"><a href="#">Amara Resort & Spa</a></h2>
               <div class="hotels-info">
                 <span class="hotels-type">Гостиница</span>
                 <span class="hotels-price">От 4000 Р.</span>
@@ -136,18 +133,19 @@
             </div>
             <div class="rating">
               <div class="stars">
-                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 4 из 5">
                 <img src="img/star.svg" width="19" height="17" alt="">
                 <img src="img/star.svg" width="19" height="17" alt="">
                 <img src="img/star.svg" width="19" height="17" alt="">
               </div>
               <p class="hotels-rating">Рейтинг: 8,5</p>
+            </div>
           </li>
 
           <li class="hotels-item">
-            <img class="hotels-image" src="img/hotel-desert-quail.jpg" width="135" height="90" alt="Мотель Desert quail inn">
+            <img class="hotels-image" src="img/hotel-desert-quail.jpg" width="135" height="90" alt="Вид на мотель Desert quail inn">
             <div class="description">
-              <h2 class="hotels-name">Desert quail inn</h2>
+              <h2 class="hotels-name"><a href="#">Desert quail inn</a></h2>
               <div class="hotels-info">
                 <span class="hotels-type">Мотель</span>
                 <span class="hotels-price">От 3000 Р.</span>
@@ -159,17 +157,18 @@
             </div>
             <div class="rating">
               <div class="stars">
-                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 3 из 5">
                 <img src="img/star.svg" width="19" height="17" alt="">
                 <img src="img/star.svg" width="19" height="17" alt="">
               </div>
               <p class="hotels-rating">Рейтинг: 8,9</p>
+            </div>
           </li>
 
           <li class="hotels-item">
-            <img class="hotels-image" src="img/hotel-villas-at-poco.png" width="135" height="90" alt="Апартаменты Villas at poco diablo">
+            <img class="hotels-image" src="img/hotel-villas-at-poco.png" width="135" height="90" alt="Вид на апартаменты Villas at poco diablo">
             <div class="description">
-              <h2 class="hotels-name">Villas at poco diablo</h2>
+              <h2 class="hotels-name"><a href="#">Villas at poco diablo</a></h2>
               <div class="hotels-info">
                 <span class="hotels-type">Апартаменты</span>
                 <span class="hotels-price">От 2000 Р.</span>
@@ -181,7 +180,7 @@
             </div>
             <div class="rating">
               <div class="stars">
-                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 2 из 5">
                 <img src="img/star.svg" width="19" height="17" alt="">
               </div>
               <p class="hotels-rating">Рейтинг: 9,2</p>
@@ -189,7 +188,6 @@
           </li>
         </ul>
       </section>
-    
     </main>
   
     <footer class="main-footer">
@@ -207,7 +205,7 @@
           <li class="social-item">
             <a class="social-button social-button-tw" href="#">
               <span class="visually-hidden">Twitter</span>
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.95 1.14403C12.635 0.648028 13.934 1.41403 14.527 2.32303C15.2 2.09203 15.858 1.84203 16.538 1.61503C16.5249 2.30139 16.2117 2.94755 15.681 3.38303C16.366 3.55303 16.985 2.89203 16.985 2.89203C16.816 3.89203 15.979 4.68003 15.422 4.91603C15.191 11.666 12.247 16.133 5.34498 15.998H4.89898C4.48898 15.998 0.734977 15.538 0.000976562 14.111C2.27198 14.307 3.89398 13.689 4.69398 12.934C3.73398 12.634 2.01498 12.457 1.71498 9.98403C2.06398 10.09 2.27898 10.212 2.90498 10.103C1.70498 9.24703 0.373977 8.53003 0.447977 6.33003C0.732977 6.65803 1.51498 6.86603 1.78798 6.80203C1.08498 6.56103 -0.182023 3.44203 0.893977 1.85003C2.71198 3.70403 4.62898 5.45603 8.04598 5.62303C8.25398 3.33003 9.18298 1.79303 10.95 1.14403Z" fill="white"/>
               </svg>
             </a>
@@ -215,7 +213,7 @@
           <li class="social-item">
             <a class="social-button social-button-fb" href="#">
               <span class="visually-hidden">Facebook</span>
-              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
               </svg>            
             </a>
@@ -223,7 +221,7 @@
           <li class="social-item">
             <a class="social-button social-button-yt" href="#">
               <span class="visually-hidden">Youtube</span>
-              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
               </svg> 
             </a>
@@ -234,7 +232,7 @@
       <section class="developer">
         <h2 class="developer-title">Website by</h2>
         <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <svg width="122" height="49" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.52 1.06h-.17L4 2.72v28.77l15.35 9.35 15.35-9.35V2.72L19.52 1.06zm61.5 1.56h-1.93v13.11h1.93V2.63zm-36.16.01v5.14a3.98 3.98 0 012.85-1.23c.97-.06 1.92.3 2.62 1 .69.7 1.06 1.67 1.01 2.67v5.55h-1.97v-5.3c.05-.51-.1-1.03-.41-1.43a1.9 1.9 0 00-1.3-.72h-.3c-1.01.06-1.93.62-2.46 1.5v5.95h-2V2.63h1.96zm36.16 28.85h-1.74v-1.42a4.06 4.06 0 01-3.37 1.66 4.7 4.7 0 01-4.33-4.74 4.7 4.7 0 014.33-4.73c1.21-.04 2.37.47 3.17 1.4v-5.33h1.94v13.16zm-29.95-1.42c.2 0 .39-.04.58-.1v1.43c-.4.15-.82.23-1.25.22a1.76 1.76 0 01-1.76-1.08 5.04 5.04 0 01-3.31 1.17c-1.6 0-3.07-.9-3.07-2.75 0-2.3 2.1-3.01 3.91-3.01.77.01 1.54.1 2.29.27v-.33c0-1.07-.8-1.9-2.31-1.9-1.1 0-2.17.23-3.17.68v-1.83c1.09-.38 2.22-.58 3.37-.6 2.49 0 4.02 1.22 4.02 3.95v3.23a.6.6 0 00.13.43c.1.12.23.2.39.2h.18v.02zm-6.8-1.22c.03.39.2.75.5 1 .28.26.66.38 1.04.35h.12c.95 0 1.87-.39 2.54-1.08v-1.53c-.63-.14-1.27-.21-1.91-.23-1.05 0-2.28.36-2.28 1.49zm15.75-5.9a5.18 5.18 0 00-2.7-.7h-.38c-1.2.05-2.35.58-3.18 1.48-.83.9-1.27 2.1-1.23 3.34v.44a4.48 4.48 0 004.72 4.23c1 .03 2-.18 2.91-.61v-1.85c-.78.45-1.67.69-2.56.7a2.88 2.88 0 01-2.66-1.43 3.02 3.02 0 010-3.07 2.88 2.88 0 012.66-1.43c.86 0 1.7.26 2.42.75v-1.85zm10.13 7.12c.2 0 .4-.04.58-.1v1.43c-.4.15-.82.23-1.24.22a1.76 1.76 0 01-1.77-1.08 5.04 5.04 0 01-3.3 1.17c-1.6 0-3.08-.9-3.08-2.75 0-2.3 2.11-3.01 3.92-3.01.77.01 1.53.1 2.29.27v-.33c0-1.07-.8-1.9-2.32-1.9-1.09 0-2.16.23-3.16.68v-1.83c1.08-.38 2.22-.58 3.37-.6 2.49 0 4.02 1.22 4.02 3.95v3.23a.6.6 0 00.12.43c.1.12.24.2.4.2h.17v.02zm-6.3-.21c-.29-.26-.47-.62-.5-1.01h.03c0-1.13 1.16-1.49 2.28-1.49.64.02 1.28.1 1.9.23v1.53a3.54 3.54 0 01-2.54 1.08h-.11a1.4 1.4 0 01-1.05-.34zm9.48-2.92c0-1.64 1.3-2.98 2.9-2.98l.03.06c1.21 0 2.31.73 2.8 1.86v2.16a3.02 3.02 0 01-2.82 1.88 2.95 2.95 0 01-2.91-2.98zm14.02-4.68c3.5 0 4.7 2.89 4.13 5.49h-6.56c.22 1.62 1.76 2.28 3.37 2.28.96 0 1.91-.22 2.78-.64v1.73c-1 .43-2.08.64-3.16.61-2.67 0-5.01-1.53-5.01-4.77a4.57 4.57 0 011.14-3.27c.8-.89 1.9-1.41 3.08-1.46h.23v.03zm-2.48 3.93a2.42 2.42 0 012.57-2.27h.05c.62-.06 1.23.17 1.67.62.44.45.67 1.08.62 1.71h-4.91v-.06zm8.62 5.28V22.5h1.74v1.07a3.98 3.98 0 012.93-1.37 3 3 0 012.79 1.52 4.3 4.3 0 013.07-1.44 3.2 3.2 0 012.49 1.01c.64.69.97 1.63.88 2.58v5.61h-2v-5.55c.05-.46-.08-.91-.37-1.27a1.67 1.67 0 00-1.13-.62h-.27c-.87.05-1.67.5-2.19 1.2v6.24h-2v-5.55c.04-.46-.1-.92-.38-1.27-.29-.35-.7-.57-1.15-.61h-.21c-.94.08-1.8.6-2.33 1.4v6.07h-1.83l-.04-.06zm24.49-8.99h-2l-2.66 6.8-3.01-6.78h-2.11l4.22 9.06-.18.45c-.52 1.36-1.24 2.05-2.19 2.05-.3 0-.6-.04-.9-.13v1.7c.39.1.78.14 1.17.15 1.33 0 2.58-.75 3.53-3.09l4.13-10.2zM56.68 6.8V3.55l-1.95.46v2.72h-1.59V8.5h1.65V13c-.07.83.23 1.64.82 2.21.59.58 1.4.85 2.2.75.79 0 1.58-.12 2.33-.38v-1.73c-.57.24-1.17.36-1.78.36-1.14 0-1.67-.39-1.67-1.58v-4.1h3.16V6.78H56.7zm5.7 8.96v-9h1.76v1.08a3.98 3.98 0 012.92-1.38A3 3 0 0169.8 7.9a4.3 4.3 0 013.07-1.44 3.2 3.2 0 012.5 1.05c.63.7.94 1.66.84 2.62v5.62h-2V10.2c.04-.46-.1-.91-.37-1.27a1.67 1.67 0 00-1.14-.62h-.24c-.86.05-1.66.5-2.18 1.2v6.24h-2V10.2c.04-.46-.1-.91-.37-1.27a1.67 1.67 0 00-1.13-.62h-.25c-.94.08-1.8.6-2.33 1.39v6.07H62.4zM32.7 30.3v.02-.02zm0-11.98V30.3l-13.35 8.13L6 30.32v-11.8L19.3 26.6v1.42l-9.1-5.5v1.41l9.15 5.62v1.5l-9.15-5.56v1.45l9.16 5.62 9.23-5.65v-6.1l4.12-2.5zm0-1.54l-3.66 2.16-1.7 1.07-8.03-4.93v1.42l6.85 4.23-.15.1-1.06.58-5.66-3.46v1.45l4.47 2.72-1.05.72-3.38-2.05v1.41l2.22 1.34-2.25 1.36L6.1 16.86l13.2-8.13 13.4 8.05zM19.3 7.28l13.42 8.07V4.56L19.36 3.13 6.02 4.56v10.8l13.27-8.09z" fill="#231F20"/></g><defs><filter id="filter0_d" x="0" y="0" width="123" height="49" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
+          <svg aria-hidden="true" focusable="false" width="122" height="49" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.52 1.06h-.17L4 2.72v28.77l15.35 9.35 15.35-9.35V2.72L19.52 1.06zm61.5 1.56h-1.93v13.11h1.93V2.63zm-36.16.01v5.14a3.98 3.98 0 012.85-1.23c.97-.06 1.92.3 2.62 1 .69.7 1.06 1.67 1.01 2.67v5.55h-1.97v-5.3c.05-.51-.1-1.03-.41-1.43a1.9 1.9 0 00-1.3-.72h-.3c-1.01.06-1.93.62-2.46 1.5v5.95h-2V2.63h1.96zm36.16 28.85h-1.74v-1.42a4.06 4.06 0 01-3.37 1.66 4.7 4.7 0 01-4.33-4.74 4.7 4.7 0 014.33-4.73c1.21-.04 2.37.47 3.17 1.4v-5.33h1.94v13.16zm-29.95-1.42c.2 0 .39-.04.58-.1v1.43c-.4.15-.82.23-1.25.22a1.76 1.76 0 01-1.76-1.08 5.04 5.04 0 01-3.31 1.17c-1.6 0-3.07-.9-3.07-2.75 0-2.3 2.1-3.01 3.91-3.01.77.01 1.54.1 2.29.27v-.33c0-1.07-.8-1.9-2.31-1.9-1.1 0-2.17.23-3.17.68v-1.83c1.09-.38 2.22-.58 3.37-.6 2.49 0 4.02 1.22 4.02 3.95v3.23a.6.6 0 00.13.43c.1.12.23.2.39.2h.18v.02zm-6.8-1.22c.03.39.2.75.5 1 .28.26.66.38 1.04.35h.12c.95 0 1.87-.39 2.54-1.08v-1.53c-.63-.14-1.27-.21-1.91-.23-1.05 0-2.28.36-2.28 1.49zm15.75-5.9a5.18 5.18 0 00-2.7-.7h-.38c-1.2.05-2.35.58-3.18 1.48-.83.9-1.27 2.1-1.23 3.34v.44a4.48 4.48 0 004.72 4.23c1 .03 2-.18 2.91-.61v-1.85c-.78.45-1.67.69-2.56.7a2.88 2.88 0 01-2.66-1.43 3.02 3.02 0 010-3.07 2.88 2.88 0 012.66-1.43c.86 0 1.7.26 2.42.75v-1.85zm10.13 7.12c.2 0 .4-.04.58-.1v1.43c-.4.15-.82.23-1.24.22a1.76 1.76 0 01-1.77-1.08 5.04 5.04 0 01-3.3 1.17c-1.6 0-3.08-.9-3.08-2.75 0-2.3 2.11-3.01 3.92-3.01.77.01 1.53.1 2.29.27v-.33c0-1.07-.8-1.9-2.32-1.9-1.09 0-2.16.23-3.16.68v-1.83c1.08-.38 2.22-.58 3.37-.6 2.49 0 4.02 1.22 4.02 3.95v3.23a.6.6 0 00.12.43c.1.12.24.2.4.2h.17v.02zm-6.3-.21c-.29-.26-.47-.62-.5-1.01h.03c0-1.13 1.16-1.49 2.28-1.49.64.02 1.28.1 1.9.23v1.53a3.54 3.54 0 01-2.54 1.08h-.11a1.4 1.4 0 01-1.05-.34zm9.48-2.92c0-1.64 1.3-2.98 2.9-2.98l.03.06c1.21 0 2.31.73 2.8 1.86v2.16a3.02 3.02 0 01-2.82 1.88 2.95 2.95 0 01-2.91-2.98zm14.02-4.68c3.5 0 4.7 2.89 4.13 5.49h-6.56c.22 1.62 1.76 2.28 3.37 2.28.96 0 1.91-.22 2.78-.64v1.73c-1 .43-2.08.64-3.16.61-2.67 0-5.01-1.53-5.01-4.77a4.57 4.57 0 011.14-3.27c.8-.89 1.9-1.41 3.08-1.46h.23v.03zm-2.48 3.93a2.42 2.42 0 012.57-2.27h.05c.62-.06 1.23.17 1.67.62.44.45.67 1.08.62 1.71h-4.91v-.06zm8.62 5.28V22.5h1.74v1.07a3.98 3.98 0 012.93-1.37 3 3 0 012.79 1.52 4.3 4.3 0 013.07-1.44 3.2 3.2 0 012.49 1.01c.64.69.97 1.63.88 2.58v5.61h-2v-5.55c.05-.46-.08-.91-.37-1.27a1.67 1.67 0 00-1.13-.62h-.27c-.87.05-1.67.5-2.19 1.2v6.24h-2v-5.55c.04-.46-.1-.92-.38-1.27-.29-.35-.7-.57-1.15-.61h-.21c-.94.08-1.8.6-2.33 1.4v6.07h-1.83l-.04-.06zm24.49-8.99h-2l-2.66 6.8-3.01-6.78h-2.11l4.22 9.06-.18.45c-.52 1.36-1.24 2.05-2.19 2.05-.3 0-.6-.04-.9-.13v1.7c.39.1.78.14 1.17.15 1.33 0 2.58-.75 3.53-3.09l4.13-10.2zM56.68 6.8V3.55l-1.95.46v2.72h-1.59V8.5h1.65V13c-.07.83.23 1.64.82 2.21.59.58 1.4.85 2.2.75.79 0 1.58-.12 2.33-.38v-1.73c-.57.24-1.17.36-1.78.36-1.14 0-1.67-.39-1.67-1.58v-4.1h3.16V6.78H56.7zm5.7 8.96v-9h1.76v1.08a3.98 3.98 0 012.92-1.38A3 3 0 0169.8 7.9a4.3 4.3 0 013.07-1.44 3.2 3.2 0 012.5 1.05c.63.7.94 1.66.84 2.62v5.62h-2V10.2c.04-.46-.1-.91-.37-1.27a1.67 1.67 0 00-1.14-.62h-.24c-.86.05-1.66.5-2.18 1.2v6.24h-2V10.2c.04-.46-.1-.91-.37-1.27a1.67 1.67 0 00-1.13-.62h-.25c-.94.08-1.8.6-2.33 1.39v6.07H62.4zM32.7 30.3v.02-.02zm0-11.98V30.3l-13.35 8.13L6 30.32v-11.8L19.3 26.6v1.42l-9.1-5.5v1.41l9.15 5.62v1.5l-9.15-5.56v1.45l9.16 5.62 9.23-5.65v-6.1l4.12-2.5zm0-1.54l-3.66 2.16-1.7 1.07-8.03-4.93v1.42l6.85 4.23-.15.1-1.06.58-5.66-3.46v1.45l4.47 2.72-1.05.72-3.38-2.05v1.41l2.22 1.34-2.25 1.36L6.1 16.86l13.2-8.13 13.4 8.05zM19.3 7.28l13.42 8.07V4.56L19.36 3.13 6.02 4.56v10.8l13.27-8.09z" fill="#231F20"/></g><defs><filter id="filter0_d" x="0" y="0" width="123" height="49" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
         </a>
       </section>
     </footer>
