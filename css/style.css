@@ -202,7 +202,7 @@ img {
 .promo::before {
   position: absolute;
   content:"";
-  bottom: 248px;
+  bottom: 245px;
   left: 371px;
   width: 457px;
   height: 351px;
@@ -246,6 +246,7 @@ img {
 .row-1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 256px;
 }
 
 .row-2 {
@@ -256,12 +257,12 @@ img {
 .row-3 {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 256px;
 }
 
 .row-4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 0px;
 }
 
 .reasons-title {
@@ -281,7 +282,7 @@ img {
 }
 
 .reasons-text {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   font-weight: 400;
 }
 
@@ -302,7 +303,7 @@ img {
 .recommendation-title-1,
 .recommendation-title-2,
 .recommendation-title-3 {
-  margin-top: 155px;
+  margin-top: 160px;
 }
 
 .recommendation-title-1::before {
@@ -359,7 +360,7 @@ img {
 }
 
 .search-text {
-  margin: 0 0 40px;
+  margin: 0 0 45px;
   padding: 0;
   font-weight: 400;
   line-height: 24px;
@@ -716,6 +717,16 @@ img {
 
 .check-input:checked + .check-box {
   background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.check-input:disabled + .check-box {
+  background-image: url(../img/checkbox-off-disabled.svg);
+  background-repeat: no-repeat;
+}
+
+.check-input:disabled:checked + .check-box {
+  background-image: url(../img/checkbox-disabled.svg);
   background-repeat: no-repeat;
 }
 
@@ -1090,6 +1101,7 @@ img {
 
 .button-blue:active {
   background-color: var(--btn-blue-active);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-brown {
@@ -1102,5 +1114,5 @@ img {
 
 .button-brown:active {
   background-color: var(--btn-brown-active);
+  color: rgba(255, 255, 255, 0.3);
 }
-
