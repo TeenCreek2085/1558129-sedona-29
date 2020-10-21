@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body body-container">
@@ -79,8 +79,12 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
+                  <div class="range-toggle range-toggle-min">
+                    <span class="visually-hidden">Ползунок минимальной стоимости</span>
+                  </div>
+                  <div class="range-toggle range-toggle-max">
+                    <span class="visually-hidden">Ползунок максимальной стоимости</span>
+                  </div>
                 </div>
                <button class="button-form" type="submit">Показать</button>
             </div>
@@ -128,16 +132,16 @@
                 <span class="hotels-price">От 4000 Р.</span>
               </div>
               <div class="hotels-buttons">
-                <button class="button button-blue" type="button">Подробнее</button>
-                <button class="button button-brown" type="button">Забронировать</button>
+                <a class="button button-blue" href="#">Подробнее</a>
+                <a class="button button-brown" href="#">Забронировать</a>
               </div>
             </div>
             <div class="rating">
               <div class="stars">
                 <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 4 из 5">
-                <img src="img/star.svg" width="19" height="17" alt="">
-                <img src="img/star.svg" width="19" height="17" alt="">
-                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 4 из 5">
+                <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 4 из 5">
+                <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 4 из 5">
               </div>
               <p class="hotels-rating">Рейтинг: 8,5</p>
             </div>
@@ -152,15 +156,15 @@
                 <span class="hotels-price">От 3000 Р.</span>
               </div>
               <div class="hotels-buttons">
-                <button class="button button-blue" type="button">Подробнее</button>
-                <button class="button button-brown" type="button">Забронировать</button>
+                <a class="button button-blue" href="#">Подробнее</a>
+                <a class="button button-brown" href="#">Забронировать</a>
               </div>
             </div>
             <div class="rating">
               <div class="stars">
                 <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 3 из 5">
-                <img src="img/star.svg" width="19" height="17" alt="">
-                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 3 из 5">
+                <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 3 из 5">
               </div>
               <p class="hotels-rating">Рейтинг: 8,9</p>
             </div>
@@ -175,14 +179,14 @@
                 <span class="hotels-price">От 2000 Р.</span>
               </div>
               <div class="hotels-buttons">
-                <button class="button button-blue" type="button">Подробнее</button>
-                <button class="button button-brown" type="button">Забронировать</button>
+                <a class="button button-blue" href="#">Подробнее</a>
+                <a class="button button-brown" href="#">Забронировать</a>
               </div>
             </div>
             <div class="rating">
               <div class="stars">
                 <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 2 из 5">
-                <img src="img/star.svg" width="19" height="17" alt="">
+                <img src="img/star.svg" width="19" height="17" alt="Рейтинг отеля 2 из 5">
               </div>
               <p class="hotels-rating">Рейтинг: 9,2</p>
             </div>
